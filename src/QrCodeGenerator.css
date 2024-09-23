@@ -1,0 +1,161 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 0.3rem;
+}
+
+button {
+  padding: 10px;
+  width: 45%;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3rem;  
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.btn{
+  display: inline;
+}
+
+#clearBtn{
+  background-color: rgb(252, 41, 41);
+}
+
+#qrcode {
+  margin-top: 20px;
+}
+
+#copiedMessage {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.Msg {
+  background-color: #45a049;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+      font-size: 14px;
+      margin: 0%;
+      padding: 0%;
+  }
+
+  .container {
+      padding: 10px;
+      margin-top: -10rem;
+      margin: -12rem 1.5rem 2rem 1.5rem;
+  }
+
+  button {
+      width: 80%;
+      font-size: 14px;
+  }
+
+  #copiedMessage {
+      top: 40%;
+      left: 50%;
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+
+  .btn{
+    display: inline;
+  }
+
+  .btn button{
+      width: 45%;
+      margin: 20px 2.5% 0% 2.5%;
+  }
+
+  #clearBtn{
+    margin-bottom: 1rem;
+  }
+
+  .modal-content{
+    background-color: #ffffff;
+    margin: 3rem;
+  }
+
+  .clear button{
+    width: fit-content;
+  }
+
+  .clear{
+    margin-top: 0.5rem;
+  }
+}
+
