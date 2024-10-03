@@ -1,4 +1,5 @@
 {
+  "homepage": "https://yashkappa.github.io/QR-code-Generator/",
   "name": "qr-code-generator",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "file-saver": "^2.0.5",
+    "gh-pages": "^6.1.1",
     "html-docx-js": "^0.3.1",
     "jspdf": "^2.5.2",
     "qrcode.react": "^4.0.1",
@@ -18,6 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
