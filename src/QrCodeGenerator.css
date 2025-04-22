@@ -20,15 +20,63 @@ body {
   border-radius: 10px;
   z-index: 2;
   position: relative;
+  overflow: scroll;
+  height: 80vh;
 }
 
-input {
-  padding: 10px;
+::-webkit-scrollbar{
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-corner{
+  overflow: hidden;
+}
+
+textarea {
+  padding: 10px 0px 100px 20px;
   width: 90%;
   margin-bottom: 10px;
   font-size: 16px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 0.3rem;
+  resize: none;
+}
+
+
+.image-upload {
+  margin-top: 10px;
+}
+
+.image-upload label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.photo{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.photo input{
+  display: none;
+}
+
+.photo label{
+  background-color: #0072ff;
+  padding: 10px 10px;
+  font-family: Arial, sans-serif;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.photo label:hover{
+  background-color: #0362d6;
+}
+
+.photo .preview{
+  margin-top: 1rem;
 }
 
 button {
