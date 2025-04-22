@@ -1,0 +1,330 @@
+/* Reset margin and padding for the body */
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Arial", sans-serif;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); /* Base gradient background */
+    position:relative;
+}
+
+/* Wave background effect */
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/wave-grid.png'), linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    animation: wave 10s linear infinite;
+}
+
+/* Animating the wave */
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Subheading with shadow and animation */
+p {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    animation: slideIn 2s ease forwards;
+    opacity: 0;
+}
+
+/* Slide-in animation for text */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Button with extreme animations */
+a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px 60px;
+    color: white;
+    background: linear-gradient(90deg, #ff512f, #f09819);
+    border-radius: 50px;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    animation: hoverEffect 5s ease infinite;
+}
+
+/* Button hover effect */
+a:hover {
+    background: linear-gradient(90deg, #f09819, #ff512f);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+/* Button hover animation */
+@keyframes hoverEffect {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Floating animated shapes */
+.shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.445);
+    border-radius: 50%;
+    opacity: 10;
+    animation: floatShapes 4s infinite ease-in-out; /* Faster animation */
+}
+
+/* Floating animation for shapes with different directions */
+@keyframes floatShapes {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(200px, -200px); /* Move diagonally up-right */
+    }
+    50% {
+        transform: translate(200px, 0); /* Move horizontally right */
+    }
+    75% {
+        transform: translate(200px, 200px); /* Move diagonally down-right */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Specific shapes with varied sizes and animations */
+.shape.small {
+    width: 50px;
+    height: 50px;
+    bottom: 10%;
+    left: 5%;
+    animation-duration: 8s;
+    animation-delay: 0s; /* Start immediately */
+}
+
+.shape.medium {
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    right: 10%;
+    animation-duration: 8s;
+    animation-delay: 1s; /* Delay start for staggered effect */
+}
+
+.shape.large {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    right: 15%;
+    animation-duration: 8s;
+    animation-delay: 2s; /* Delay start for staggered effect */
+}
+
+.shape.extra-large {
+    width: 200px;
+    height: 200px;
+    left: 10%;
+    top: 50%;
+    animation-duration: 8s;
+    animation-delay: 3s; /* Delay start for staggered effect */
+}
+
+.shape.xlarge {
+    width: 250px;
+    height: 250px;
+    left: 60%;
+    bottom: 30%;
+    animation-duration: 8s;
+    animation-delay: 4s; /* Delay start for staggered effect */
+}
+
+/* New shapes with fast movement in different directions */
+.shape.new-one {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 30%;
+    animation-duration: 8s;
+    animation-delay: 5s; /* Delay start for staggered effect */
+}
+
+.shape.new-two {
+    width: 120px;
+    height: 120px;
+    bottom: 25%;
+    left: 60%;
+    animation-duration: 8s;
+    animation-delay: 6s; /* Delay start for staggered effect */
+}
+
+.shape.new-three {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    right: 20%;
+    animation-duration: 8s;
+    animation-delay: 7s; /* Delay start for staggered effect */
+}
+
+.shape.new-four {
+    width: 200px;
+    height: 200px;
+    top: 70%;
+    left: 70%;
+    animation-duration: 8s;
+    animation-delay: 8s; /* Delay start for staggered effect */
+}
+
+.shape.new-five {
+    width: 100px;
+    height: 100px;
+    bottom: 40%;
+    right: 30%;
+    animation-duration: 8s;
+    animation-delay: 9s; /* Delay start for staggered effect */
+}
+
+/* Left side shapes with varied sizes and animations */
+.shape.left-one {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 5%;
+    animation-duration: 8s;
+    animation-delay: 10s; /* Delay start for staggered effect */
+}
+
+.shape.left-two {
+    width: 120px;
+    height: 120px;
+    top: 30%;
+    left: 10%;
+    animation-duration: 8s;
+    animation-delay: 11s; /* Delay start for staggered effect */
+}
+
+.shape.left-three {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 15%;
+    animation-duration: 8s;
+    animation-delay: 12s; /* Delay start for staggered effect */
+}
+
+.shape.left-four {
+    width: 200px;
+    height: 200px;
+    top: 70%;
+    left: 20%;
+    animation-duration: 8s;
+    animation-delay: 13s; /* Delay start for staggered effect */
+}
+
+.shape.left-five {
+    width: 100px;
+    height: 100px;
+    bottom: 40%;
+    left: 25%;
+    animation-duration: 8s;
+    animation-delay: 14s; /* Delay start for staggered effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body{
+        margin: 0%;
+        padding: 0%;
+        font-family: "Arial", sans-serif;
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+    }
+
+    .back{
+        background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); /* Base gradient background */
+        height: 103vh;
+        margin: 0%;
+    }
+
+    .text{
+        padding-top: 10rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: medium;
+    }
+
+    p {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    a {
+        padding: 15px 40px; /* Reduce padding */
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    /* Adjust shapes for mobile */
+    .shape {
+        opacity: 0.7; /* Slightly less opacity for better visibility */
+    }
+
+    .shape.small {
+        width: 30px;
+        height: 30px;
+    }
+
+    .shape.medium {
+        width: 70px;
+        height: 70px;
+    }
+
+    .shape.large {
+        width: 100px;
+        height: 100px;
+    }
+
+    .shape.extra-large {
+        width: 120px;
+        height: 120px;
+    }
+
+    .shape.xlarge {
+        width: 150px;
+        height: 150px;
+    }
+
+    .shape.new-one,
+    .shape.new-two,
+    .shape.new-three,
+    .shape.new-four,
+    .shape.new-five,
+    .shape.left-one,
+    .shape.left-two,
+    .shape.left-three,
+    .shape.left-four,
+    .shape.left-five {
+        width: 50px; /* Make all new shapes smaller */
+        height: 50px;
+    }
+}
