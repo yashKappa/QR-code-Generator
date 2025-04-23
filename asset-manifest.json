@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/QR-code-Generator/static/css/main.3a1d1f47.css",
+    "main.js": "/QR-code-Generator/static/js/main.3f04ea38.js",
+    "static/js/239.1973dd8e.chunk.js": "/QR-code-Generator/static/js/239.1973dd8e.chunk.js",
+    "static/js/213.eea660fa.chunk.js": "/QR-code-Generator/static/js/213.eea660fa.chunk.js",
+    "static/js/732.b1b6806c.chunk.js": "/QR-code-Generator/static/js/732.b1b6806c.chunk.js",
+    "static/js/453.2018e620.chunk.js": "/QR-code-Generator/static/js/453.2018e620.chunk.js",
+    "index.html": "/QR-code-Generator/index.html",
+    "main.3a1d1f47.css.map": "/QR-code-Generator/static/css/main.3a1d1f47.css.map",
+    "main.3f04ea38.js.map": "/QR-code-Generator/static/js/main.3f04ea38.js.map",
+    "239.1973dd8e.chunk.js.map": "/QR-code-Generator/static/js/239.1973dd8e.chunk.js.map",
+    "213.eea660fa.chunk.js.map": "/QR-code-Generator/static/js/213.eea660fa.chunk.js.map",
+    "732.b1b6806c.chunk.js.map": "/QR-code-Generator/static/js/732.b1b6806c.chunk.js.map",
+    "453.2018e620.chunk.js.map": "/QR-code-Generator/static/js/453.2018e620.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a1d1f47.css",
+    "static/js/main.3f04ea38.js"
+  ]
+}
