@@ -1,3 +1,6 @@
+
+![QRcodegenerate](https://github.com/user-attachments/assets/f525471d-f8b6-4fbc-9f81-a76e4e71f1e2)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
